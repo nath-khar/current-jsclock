@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+
+
+body{
+    font-family: 'Khand', sans-serif;
+    background:#000;
+}
+
+div{
+    display: flex;
+}
+
+body > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}   
+
+.currentTime, .days p.activeDay, .active, .currentDate{
+    color: #F5AB2E;
+}
+
+.currentTime{
+    font-size: 250px;
+}
+
+button{
+    color: #939393;
+    background-color: #333333;
+    padding: 10px 20px;
+    border: none;
+    font-size: 30px;
+    font-family: 'Khand', sans-serif;
+    cursor: pointer;
+}
+
+.days{
+    width: 100%;
+    justify-content: center;
+}
+
+.days p{
+    text-transform: capitalize;
+    font-size: 35px;
+    padding: 0 1%;
+    color: #fff;
+}
+
+.currentDate{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1224px) {
+    .currentTime{
+        font-size: 180px;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .currentTime{
+        font-size: 100px;
+    }
+
+    .currentDate{
+        font-size:20px;
+        color: #f5ac2e80;
+    }
+
+    button{
+        font-size: 15px;
+    }
+    
+    .days p{
+        display: none;
+    }
+
+    .days p.activeDay{
+        font-size: 20px;
+        display: block;
+    }
+}
